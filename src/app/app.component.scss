@@ -1,0 +1,20 @@
+:host {
+  main {
+    overflow: auto;
+    flex-grow: 1;
+  }
+  nav{
+    position: fixed;
+    left: 0;
+    ul {
+      list-style: none;
+      li {
+        margin-right: 1px;
+      }
+      a {
+        padding: 1rem;
+        text-decoration: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+<div class="left-col">
+    <h1>intersection page works!</h1>
+
+    <ng-container *ngFor="let item of contentArr, let i = index">
+        <section [attr.id]="i + 1" maObserveVisibility [delay]="300" (visible)="activeId = $event">
+            <h3>{{(i + 1) + '. Lorem ipsum dolor sit amet'}}</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium deserunt dolore ex fuga illum nemo quae quaerat tempora temporibus vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur corporis, earum! Aliquid assumenda maiores nihil porro quis sed sequi vero!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi blanditiis ipsum itaque laudantium libero maiores possimus rerum sint voluptatem? Animi delectus deleniti dolor doloribus ea earum et eveniet ex fugit illo illum iste iure, libero mollitia neque nisi non nulla optio pariatur quia, quis reiciendis repellat repellendus reprehenderit, similique sint voluptate. Accusamus accusantium aliquid blanditiis consequuntur dolore dolorem dolorum eaque esse et ex explicabo fugit harum inventore ipsa, molestias necessitatibus nemo neque nostrum officia perferendis quam quidem quod soluta tempore veniam veritatis voluptatem! Aliquam animi aspernatur ipsum perspiciatis recusandae. Et exercitationem, illum ipsa modi mollitia numquam quae reiciendis vitae?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium deserunt dolore ex fuga illum nemo quae quaerat tempora temporibus vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur corporis, earum! Aliquid assumenda maiores nihil porro quis sed sequi vero!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium deserunt dolore ex fuga illum nemo quae quaerat tempora temporibus vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur corporis, earum! Aliquid assumenda maiores nihil porro quis sed sequi vero!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem ipsa maxime mollitia quaerat quasi! Adipisci distinctio dolor dolore doloribus est ex impedit inventore itaque, iusto neque numquam officia omnis pariatur placeat quaerat quod voluptatibus? Ab adipisci aliquam aperiam assumenda deserunt est eveniet iste laboriosam minima molestias nemo officia optio perferendis placeat qui quidem quis quo quos sapiente soluta sunt, suscipit tempora unde velit voluptatibus. Architecto blanditiis consectetur corporis debitis deserunt est illo impedit in incidunt ipsa iusto laboriosam magnam magni necessitatibus nostrum officia possimus quasi, repudiandae, suscipit tenetur. Architecto assumenda aut inventore modi molestiae nemo officiis, omnis quas quibusdam tempora.</p>
+        </section>
+    </ng-container>
+</div>
+
+<div class="right-col">
+    <ul>
+        <li *ngFor="let item of contentArr, let i = index" [class.active]="i == activeId">
+            <a [routerLink]="'.'" [fragment]="'' + (i + 1)">
+                {{(i + 1) + '. Lorem ipsumsit amet'}}
+            </a>
+        </li>
+    </ul>
+</div>
