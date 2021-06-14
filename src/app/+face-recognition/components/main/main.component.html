@@ -1,0 +1,17 @@
+<button class="sign-out">Sign out</button>
+
+<div class="center-block">
+    <h3>Hello, put image url here!</h3>
+    {{inProgress | json}}
+    <ma-image-input (detect)="onDetect($event)" (show)="onShow($event)"></ma-image-input>
+    <div class="image-container">
+        <img src="/assets/images/sports.jpeg" alt="" #image crossorigin="anonymous">
+        <!-- <img [src]="url" alt="" #image crossorigin="anonymous" (complete)="log($event)"> -->
+        <div class="box" *ngFor="let box of boxes | async"
+            [style.width]="box?.width + 'px'" 
+            [style.height]="box?.height + 'px'"
+            [style.top]="box?.top + 'px'"
+            [style.left]="box?.left + 'px'"
+        ></div>
+    </div>
+</div>

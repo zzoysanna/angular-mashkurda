@@ -8,3 +8,14 @@ body {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
 }
+button:not(.sign-out) {
+  padding: 0.5rem 1rem;
+  background: navy;
+  color: #fff;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  &:active {
+      background: blue;
+  }
+}

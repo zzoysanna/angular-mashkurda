@@ -1,0 +1,32 @@
+:host {
+    padding: 2rem;
+    display: block;
+    overflow: visible;
+    position: relative;
+    .center-block {
+        margin: 5rem auto 0;
+        display: block;
+        max-width: 30rem;
+    }
+    ma-image-input {
+        margin: 1rem 0;
+    }
+    .sign-out {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+    img {
+        max-width: 100%;
+    }
+    .image-container {
+        width: fit-content;
+        position: relative;
+    }
+    .box {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border: 3px solid yellow;
+    }
+}

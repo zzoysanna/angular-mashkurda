@@ -1,20 +1,19 @@
 :host {
+  display: flex;
   main {
     overflow: auto;
     flex-grow: 1;
   }
   nav{
-    position: fixed;
-    left: 0;
+    margin-top: 2rem;
     ul {
       list-style: none;
-      li {
-        margin-right: 1px;
-      }
       a {
-        padding: 1rem;
+        padding: 0.5rem 1rem;
         text-decoration: none;
+        display: block;
       }
     }
   }
+
 }

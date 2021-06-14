@@ -1,0 +1,5 @@
+<div *ngIf="joke$ | async as joke">
+    <img [src]="joke.icon_url" alt="chuck">
+    <p>{{joke.value}}</p>
+</div>
+<button (click)="getJoke()">Another one, please!</button>
